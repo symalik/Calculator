@@ -15,6 +15,7 @@ namespace Calculator
             int userInput1 = 0;
             int userInput2 = 0;
             int userSelection = 0;
+            int total = 0;
 
             Console.WriteLine("This Calculator Program!");
             
@@ -29,6 +30,28 @@ namespace Calculator
             userSelection = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine($"The numbers entered are {userInput1} and {userInput2} and option #{userSelection}");
+
+            if (userSelection == 1)
+            {
+                total = userInput1 + userInput2;
+                Console.WriteLine($"Adding the two numbers together = {total}");
+            }
+            else if (userSelection == 2)
+            {
+                total = userInput1 - userInput2;
+                Console.WriteLine($"Subtracting the two numbers together = {total}");
+            }
+            else if (userSelection == 3)
+            {
+                total = userInput1 * userInput2;
+                Console.WriteLine($"Multiplying the two numbers together = {total}");
+            }
+            else
+            {
+                total = userInput1 / userInput2;
+                Console.WriteLine($"Dividing the two numbers together = {total}.");
+            }
+                    
         }
     }
 }
