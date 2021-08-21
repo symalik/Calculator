@@ -64,11 +64,14 @@ namespace Calculator
                     Console.WriteLine("Please enter a numerical value!");
                 }
 
-                Console.WriteLine("Please enter 'Y' or 'Yes to continue or N or 'No' to exit.");
-                userRequest = Console.ReadLine();
-                if (userRequest == "N" || userRequest == "No")
+                if (checkInput2 == false)
                 {
-                    Environment.Exit(0);
+                    Console.WriteLine("Please enter 'Y' or 'Yes to continue or N or 'No' to exit.");
+                    userRequest = Console.ReadLine();
+                    if (userRequest == "N" || userRequest == "No")
+                    {
+                        Environment.Exit(0);
+                    }
                 }
             }
 
