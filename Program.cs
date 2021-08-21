@@ -14,6 +14,7 @@ namespace Calculator
 
             int userInput1 = 0;
             int userInput2 = 0;
+            int userSelection = 0;
 
             Console.WriteLine("This Calculator Program!");
             
@@ -23,7 +24,11 @@ namespace Calculator
             Console.WriteLine("Please enter the second number: ");
             userInput2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"The numbers entered are {userInput1} and {userInput2}");
+            Console.WriteLine("Please enter if you would like to (#):");
+            Console.WriteLine("1. Add\n2. Subtract\n3. Multiply \n4. Divide");
+            userSelection = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"The numbers entered are {userInput1} and {userInput2} and option #{userSelection}");
         }
     }
 }
