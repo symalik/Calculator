@@ -19,6 +19,7 @@ namespace Calculator
             bool checkInput1 = false;
             bool checkInput2 = false;
             bool checkSelection = false;
+            string userRequest;
 
             Console.WriteLine("This Calculator Program!");
             
@@ -35,6 +36,15 @@ namespace Calculator
                 {
                     Console.WriteLine("Please enter a numerical value!");
                 }
+
+
+                Console.WriteLine("Please enter 'Y' or 'Yes to continue or N or 'No' to exit.");
+                userRequest = Console.ReadLine();
+                if( userRequest == "N" || userRequest == "No" )
+                {
+                    Environment.Exit(0);
+                }
+
             }
 
             //loop to check for correct input (second input)
