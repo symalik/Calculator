@@ -88,6 +88,16 @@ namespace Calculator
                     checkSelection = true;
                 }
 
+                if (checkSelection == false)
+                {
+                    Console.WriteLine("Selction must be between 1 - 4");
+                    Console.WriteLine("Please enter 'Y' or 'Yes to continue or N or 'No' to exit.");
+                    userRequest = Console.ReadLine();
+                    if (userRequest == "N" || userRequest == "No")
+                    {
+                        Environment.Exit(0);
+                    }
+                }
             }
             
             //Perform mathimatical operation
