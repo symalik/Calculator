@@ -15,7 +15,7 @@ namespace Calculator
             int userInput1 = 0;
             int userInput2 = 0;
             int userSelection = 0;
-            int total = 0;
+            int total;
             bool checkInput1 = false;
             bool checkInput2 = false;
             bool checkSelection = false;
@@ -28,7 +28,7 @@ namespace Calculator
                 Console.WriteLine("Please enter the first number: ");
                 var userInput1Check = Console.ReadLine();
 
-                //check input
+                
                 checkInput1 = int.TryParse(userInput1Check, out userInput1);
 
                 if (!checkInput1)
@@ -43,7 +43,7 @@ namespace Calculator
                 Console.WriteLine("Please enter the second number: ");
                 var userInput2Check = Console.ReadLine();
 
-                //check input
+                
                 checkInput2 = int.TryParse(userInput2Check, out userInput2);
 
                 if (!checkInput2)
@@ -67,7 +67,7 @@ namespace Calculator
 
             }
             
-
+            //Perform mathimatical operation
             Console.WriteLine($"The numbers entered are {userInput1} and {userInput2} and option #{userSelection}");
 
             if (userSelection == 1)
