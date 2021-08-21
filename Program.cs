@@ -75,6 +75,7 @@ namespace Calculator
                 }
             }
 
+            //loop to check for correct input (third input)
             while (!checkSelection)
             {
                 Console.WriteLine("Please enter if you would like to (#):");
